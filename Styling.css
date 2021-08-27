@@ -107,14 +107,12 @@ body {
     color:rgb(42, 42, 42);
 }
 
-#introducao,
-    #contribuicao,
-        #historia {
-        border-top: 1px solid rgb(42, 42, 42);
-        padding: 0px 200px 10px 200px;
-        text-align:center;
-        width: 500px;
-        margin: 0 auto;
+#main {
+    border-top: 1px solid rgb(42, 42, 42);
+    padding: 0px 200px 10px 200px;
+    text-align:center;
+    width: 500px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -128,11 +126,13 @@ h2 {
 
 .share {
     border-top: 1px solid crimson;
-    width: 850px;
-    padding: 20px;
+    padding: 40px 0px;
     position: relative;
     text-align: center;
     margin: 0 auto;
+    margin-top: 40px;
+    background-image: url('file:///C:/Users/PICHAU/Downloads/iso-republic-abstract-liquid-swirl-19-free-stock-photo.jpg');
+    background-size: cover;
 }
 
 a {
@@ -143,6 +143,8 @@ a {
     color: white;
     display: inline-block;
     text-decoration: none;
+    margin: 5px;
+    padding: 0px 10px;
 }
 
 a:hover {
