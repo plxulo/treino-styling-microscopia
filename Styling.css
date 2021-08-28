@@ -1,74 +1,10 @@
-/*
-estrutura básica do css
-em que:
-p= seletor
-{
-    color:blue; = bloco de declaração.
-}
-color:blue;= declaração em si.
-color= propriedade a ser declarada.
-blue= valor.
-
-tbm pode ser escrito inline como:
-<p style=color:blue; > oie </p>
-
-attribute selector: seleciona qq elemento html que já tenha atributos.
-    ex:
-        [p]{
-            color:red;
-        }
-eles selecionam também types, classes e id's. é so colocar [attribute]{}.
-
-pode ser mais detalhado usando:
-type[attribute*='value']
-ex:
-
-<img src='/images/seasons/cold/winter.jpg'>
-<img src='/images/seasons/warm/summer.jpg'>
-
-img[src*='winter'] {
-  height: 50px;
-}
- 
-img[src*='summer'] {
-  height: 100px;
-}
-
-selecinar mais especificamente:
-por ex se algum bagulho tem class='paulo' e e um p vs escreve assim
-p.paulo{
-    color:darkblue;
-}
-
-mesmo que tenha outro p esse e mais especifico emtao todo p class='paulo'
-vai ganha
-
-selecionar nested bagui
-<ul class='fodase'>
-    <li>coisa</li>
-</ul>
-
-só escreverf assim:
-.fodase li {
-    alguma:coisa;
-}
-
-selecionar multiplos:
-bota virgula
-p,
-.paulo {
-    font-family: Georgia
-}
-
-
-*/
 body {
     background-color: #e0e0e0;
     font-family: 'Roboto', sans-serif;
 }
 
 #banner {
-    background-image: url('file:///C:/Users/PICHAU/Downloads/iso-republic-abstract-liquid-swirl-19-free-stock-photo.jpg');
+    background-image: url('images/iso-republic-abstract-liquid-swirl-19-free-stock-photo.jpg');
     background-size: cover;
     height: 400px;
     padding-top: 40px;
@@ -111,7 +47,8 @@ body {
     border-top: 1px solid rgb(42, 42, 42);
     padding: 0px 200px 10px 200px;
     text-align:center;
-    width: 500px;
+    max-width: 500px;
+    min-width: 150px;
     margin: 0 auto;
 }
 
@@ -122,7 +59,13 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
-
+img {
+    padding: 20px 50px 20px 50px;
+    border-radius: 90px;
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+}
 
 .share {
     border-top: 1px solid crimson;
@@ -131,7 +74,7 @@ h2 {
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
-    background-image: url('file:///C:/Users/PICHAU/Downloads/iso-republic-abstract-liquid-swirl-19-free-stock-photo.jpg');
+    background-image: url('images/iso-republic-abstract-liquid-swirl-19-free-stock-photo.jpg');
     background-size: cover;
 }
 
